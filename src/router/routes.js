@@ -15,11 +15,7 @@ const routes = [
         component: () => import("pages/DashboardPage.vue"),
         name: "dashboard",
       },
-      {
-        path: "/user/bills",
-        component: () => import("pages/user/BillPaymentList.vue"),
-        name: "user.bills",
-      },
+
       {
         path: "/buy/electricity",
         component: () => import("pages/user/UtilityBills.vue"),

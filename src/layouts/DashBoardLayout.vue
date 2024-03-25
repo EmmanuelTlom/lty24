@@ -93,6 +93,14 @@
       </q-scroll-area>
     </q-drawer>
 
+    <q-footer>
+      <div class="row justify-center">
+        <p class="rights">
+          © Lyt24 {{ new Date().getFullYear() }}. All Rights Reserved.
+        </p>
+      </div>
+    </q-footer>
+
     <q-page-container>
       <router-view />
     </q-page-container>
