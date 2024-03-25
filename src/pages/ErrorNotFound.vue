@@ -1,31 +1,38 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
-    <div>
-      <div style="font-size: 30vh">
-        404
+  <div class="admin_auth">
+    <div class="form_area">
+      <div class="auth">
+        <div class="row justify-center">
+          <img src="/images/404.png" alt="" />
+        </div>
+        <div class="q-mt-xl">
+          <h5 class="main_tex">Looks like you’ve got lost….</h5>
+          <div class="submit row justify-center">
+            <q-btn :to="{ name: 'dashboard' }" flat no-wrap no-caps>
+              Back to Dashboard
+            </q-btn>
+          </div>
+        </div>
       </div>
-
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
-
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
     </div>
   </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<script setup>
+import { ref } from "vue";
 
-export default defineComponent({
-  name: 'ErrorNotFound'
-})
+let data = ref({
+  remember: false,
+});
 </script>
+
+<style lang="scss" scoped>
+img {
+  width: 100%;
+  max-width: 300px;
+}
+.main_tex {
+  font-size: 20px;
+  line-height: 20px;
+}
+</style>

@@ -36,8 +36,10 @@
           </div>
 
           <div style="gap: 1rem" class="row btns items-center">
-            <a href=""><img src="../assets/badge1.svg" alt="" /></a>
-            <a href=""><img src="../assets/badge2.svg" alt="" /></a>
+            <q-btn :to="{ name: 'login' }" outline no-caps no-wrap>Login</q-btn>
+            <q-btn :to="{ name: 'register' }" outline no-wrap no-caps
+              >Sign Up</q-btn
+            >
           </div>
 
           <div class="toggle_btn">
