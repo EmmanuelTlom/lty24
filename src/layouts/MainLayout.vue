@@ -42,11 +42,11 @@
             >
           </div>
 
-          <div class="toggle_btn">
+          <!-- <div class="toggle_btn">
             <q-btn flat>
               <i class="fa-solid fa-bars"></i>
             </q-btn>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>

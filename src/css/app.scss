@@ -900,7 +900,9 @@ footer {
     }
 
     .btns {
-      display: none;
+      .q-btn {
+        padding: 4px 8px;
+      }
     }
   }
 
@@ -967,7 +969,56 @@ footer {
   // .hero {
   //   padding-top: 5rem;
   // }
+  .greyBack {
+    .dash_grid {
+      grid-template-columns: 1fr;
+    }
 
+    section {
+      padding: 2rem 0 5rem;
+    }
+    .convertPage {
+      padding-top: 1rem;
+      .convertCard {
+        margin: 0 1rem;
+        padding: 2rem 1rem 1rem;
+      }
+    }
+  }
+  .convertPage .convertCard .airtime_networks img {
+    width: 106px;
+    height: 84px;
+    padding: 0.7rem;
+  }
+  .convertmodalcard {
+    padding: 3rem 1rem;
+
+    .q-my-sm {
+      img {
+        width: 100px !important;
+        height: 100px !important;
+      }
+    }
+
+    .sharegift {
+      & > div {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .authlayout .loginPage {
+    padding-top: 2rem;
+  }
+
+  .grid.order {
+    .right {
+      order: 2;
+    }
+
+    .left {
+      order: 1;
+    }
+  }
   footer {
     padding: 3rem 0rem;
     .container > .row {
